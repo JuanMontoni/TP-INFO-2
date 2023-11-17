@@ -2,17 +2,17 @@
 
 int main()
 {
-    estados_t estado = APAGAR;
+    estados_t estado = NOCHE;
     init_mcu();
     while(1)
     {
         switch (estado)
         {
-        case APAGAR:
-            estado = f_iluminar();
+        case NOCHE:
+            estado = f_luzprenida();
             break;
-        case PRENDER:
-            estado = f_iluminar();
+        case DIA:
+            estado = f_luzapagada();
             break;
         }
     }

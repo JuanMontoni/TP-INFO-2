@@ -4,12 +4,12 @@
 #include "avr_api.h"
 
 typedef enum {
-    PRENDER = 1,
-    APAGAR = 0
+    DIA = 1;
+    NOCHE = 0;
 }estados_t;
 
-estados_t f_iluminar(void);
-/** estados_t f_noiluminar(void); **/
+estados_t f_luzprenida(void);
+estados_t f_luzapagada(void); 
 
 void init_mcu(void);
 

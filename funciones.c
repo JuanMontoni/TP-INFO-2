@@ -20,18 +20,31 @@ int lectura_ldr(void){
     return (int)leer_ADC(LDR);
 }
 
-estados_t f_iluminar(void)
+estados_t f_luzprenida(void)
 {
     int intensidadluz;
     intensidadluz = lectura_ldr();
     if(intensidadluz >= INTENSIDADLUZ_SET){
         RELE = 0;
-        return APAGAR
+        return DIA;
     }
     else{ 
        RELE = 1;
-       return PRENDER;
+       return NOCHE;
     }
         
 }
 
+estados_t f_luzapagada(void)
+{
+    int intensidadluz;
+    intensidadluz = lectura_ldr();
+    if(intensidadluz <= INTENSIDADLUZ_SET){
+        RELE = 1;
+        return NOCHE;
+    }
+    else{
+        RELE = 0;
+        return DIA;
+    }
+}
