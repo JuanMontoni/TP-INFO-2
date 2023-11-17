@@ -48,3 +48,4 @@ estados_t f_luzapagada(void)
         return DIA;
     }
 }
+
