@@ -3,7 +3,7 @@
 int main()
 {
     estados_t estado = NOCHE;
-    estados_t (*fms[2])(viod) = {f_luzapagada,f_luzprenida};
+    estados_t (*fms[2])(void) = {f_luzapagada1,f_luzprenida1};
     init_mcu();
     while (1)
     {
