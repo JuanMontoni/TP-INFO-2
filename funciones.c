@@ -64,7 +64,7 @@ estados_t f_luzapagada1(void)
 }
 
 
-estados_t f_luzprenida1(void)
+estados_t f_luzprenida2(void)
 {
     RELE2 = 1;
     if (avr_GPIOC_PIN_0 = 0){
@@ -77,7 +77,7 @@ estados_t f_luzprenida1(void)
 }
 
 
-estados_t f_luzapagada1(void)
+estados_t f_luzapagada2(void)
 {
     RELE2 = 0;
     if(avr_GPIOC_PIN_0 = 1){
