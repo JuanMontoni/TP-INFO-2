@@ -4,8 +4,8 @@
 #include "avr_api.h"
 
 typedef enum {
-    DIA = 1;
-    NOCHE = 0;
+    DIA = 0;
+    NOCHE = 1;
     MOVIMIENTO = 1;
     SINMOVIMIENTO = 0;
 }estados_t;
