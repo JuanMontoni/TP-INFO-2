@@ -2,7 +2,7 @@
 
 int main()
 {
-    estados_t estado = NOCHE;
+    estados_t estado = DIA;
     estados_t estado2 = SINMOVIMIENTO;
     init_mcu();
     while(1)
